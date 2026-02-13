@@ -1,9 +1,12 @@
-/** TINKERERS' LABORATORY IIT HYDERABAD
- *  TINKER TECH CAMP 2025
- *  MECHATRONICS EDITION
- *
- *  Date: 6th Sep, 2025
- *  Time: 00:15
+/**
+ * Tinkerers' Laboratory IIT Hyderabad
+ * 
+ * Tinker Tech Camp 
+ * Mechatronics Edition
+ * 14 Feb 2026 - 15 Feb 2026
+ * 
+ * The Rover
+ * 
  */
 
 //Header Inclusions:

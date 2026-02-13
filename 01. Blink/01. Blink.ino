@@ -1,6 +1,21 @@
+/**
+ * Tinkerers' Laboratory IIT Hyderabad
+ * 
+ * Tinker Tech Camp 
+ * Mechatronics Edition
+ * 14 Feb 2026 - 15 Feb 2026
+ * 
+ * Exercise 01: Blink
+ * 
+ */
+
 // declare the pins
 const int LED = 6;
 
+// delay time in milliseconds
+// this is the time for which the LED will be on or off
+// in this case, it is set to 50 milliseconds
+// you can change this value to make the LED blink faster or slower
 const int hold = 50;
 
 void setup() {
@@ -10,10 +25,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for(int brightness = 0; brightness <= 255; brightness = brightness + 10) {
-    analogWrite(LED, brightness);
-    delay(hold);
-    // analogWrite(LED, 0);
-    // delay(hold);
-  }
+  digitalWrite(LED, HIGH); // turn the LED on
+  delay(hold);             // wait for hold milliseconds
+  digitalWrite(LED, LOW);  // turn the LED off
+  delay(hold);             // wait for hold milliseconds
 }
