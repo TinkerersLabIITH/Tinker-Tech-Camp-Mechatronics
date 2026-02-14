@@ -1,3 +1,15 @@
+/**
+ * Tinkerers' Laboratory IIT Hyderabad
+ * 
+ * Tinker Tech Camp 
+ * Mechatronics Edition
+ * 14 Feb 2026 - 15 Feb 2026
+ * 
+ * Exercise 08: Ultrasonic Sensor
+ * 
+ */
+
+
 // Define pin numbers based on your wiring diagram
 const int trigPin = 9;
 const int echoPin = 10;

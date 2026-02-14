@@ -1,7 +1,21 @@
+/**
+ * Tinkerers' Laboratory IIT Hyderabad
+ * 
+ * Tinker Tech Camp 
+ * Mechatronics Edition
+ * 14 Feb 2026 - 15 Feb 2026
+ * 
+ * Exercise 05: Serial RGB
+ * 
+ */
+
+
 const int LED_R = 7;
 const int LED_B = 8;
 
 String command = "";  // to store the incoming command
+
+//LEDR and LEDB commands will turn on the respective LEDs, while LEDOFF will turn both off. Any other command will be reported as unknown.
 
 void setup() {
   Serial.begin(9600);    // start Serial at 9600 baud

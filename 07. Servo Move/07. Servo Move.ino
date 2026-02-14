@@ -1,8 +1,23 @@
+/**
+ * Tinkerers' Laboratory IIT Hyderabad
+ * 
+ * Tinker Tech Camp 
+ * Mechatronics Edition
+ * 14 Feb 2026 - 15 Feb 2026
+ * 
+ * Exercise 06: Servo Move
+ * 
+ */
+
+
 #include <Servo.h>
+//Header file for servo library, which provides functions to control servo motors
 
 int pos = 0;
+// variable to store the servo position, which will be updated in the loop
 
 Servo servo_9;
+//declare the servo
 
 void setup()
 {
