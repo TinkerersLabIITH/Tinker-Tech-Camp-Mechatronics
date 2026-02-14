@@ -19,19 +19,20 @@ void setup()
 
 void loop()
 { 
-  	// set percentage of brightness
-	int brightness = 50;
+	int delay_ms = 50; 
+  	for(int brightness=0; brightness<=100; brightness+=10) { // loop to increase brightness from 0% to 100% in steps of 10%
+		// set percentage of brightness
 
-	// delay time in milliseconds
-	int delay_ms = 1000; 
+		// delay time in milliseconds
+		
 
-	// analogWrite argument must be between 0 and 255
-	// so convert percentage to value between 0 and 255
-	analogWrite(output, 255*brightness/100);    
-	//Finally outputting the read value on pin-9 fading LED
+		// analogWrite argument must be between 0 and 255
+		// so convert percentage to value between 0 and 255
+		analogWrite(output, 255*brightness/100);    
+		//Finally outputting the read value on pin-9 fading LED
 
-	delay(delay_ms); // wait for delay milliseconds
-	analogWrite(output, 0); // turn the LED off
-	delay(delay_ms); // wait for delay milliseconds
-
+		delay(delay_ms); // wait for delay milliseconds
+		analogWrite(output, 0); // turn the LED off
+		delay(delay_ms); // wait for delay milliseconds
+	}
 }  
